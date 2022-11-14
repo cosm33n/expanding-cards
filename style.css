@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #333;
+  background-color: #202124;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   display: flex;
@@ -21,19 +21,16 @@ body {
 }
 
 .panel {
-  /* background-size: auto 100%; */
   background-size:auto 100% ;
   background-position: center;
-  /* background-repeat: no-repeat; */
   height: 80vh;
   border-radius: 40px;
   color: white;
   cursor: pointer;
-  /* display: flex; */
-  flex: 1 1 auto;
+  flex: 1;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex .6s ease-in-out;
 }
 
 .panel h3 {
@@ -51,7 +48,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.7s ease-in 0.3s;
+  transition: opacity .7s ease-in-out .3s;
 }
 
 @media (max-width: 580px) {
